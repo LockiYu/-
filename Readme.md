@@ -83,6 +83,7 @@
 
 ## 项目结构
 
+```bash
 ├── backend/ # 后端项目目录
 │ ├── src/ # 源代码
 │ │ ├── controllers/ # 控制器
@@ -97,6 +98,7 @@
 │ │ ├── views/ # 页面
 │ │ ├── router/ # 路由配置
 │ │ └── stores/ # 状态管理
+```
 
 ## 环境要求
 
@@ -132,6 +134,19 @@ npm run dev
 - 创建数据库
 - 导入 schema.sql
 - 配置 .env 文件中的数据库连接信息
+.env文件需要在backend文件夹下创建，内容如下
+
+```bash
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=你的密码
+DB_NAME=graduation_management
+PORT=3001
+NODE_ENV=development
+JWT_SECRET=你的密钥
+JWT_EXPIRES_IN=24h
+BACKUP_DIR=./backups
+```
 
 ## 开发环境
 
